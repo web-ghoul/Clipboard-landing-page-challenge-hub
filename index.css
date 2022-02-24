@@ -1,0 +1,473 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+header .contain {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    background-image: url('./images/bg-header-desktop.png');
+    background-repeat: no-repeate;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btns button {
+    outline: none;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.btns button:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+.btns button:first-child {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0px 8px 10px 5px hsl(171, 67%, 82%);
+    transition: .3s;
+    border-bottom: 3px solid hsl(171, 67%, 38%);
+}
+
+.btns button:first-child:hover {
+    border-bottom: 3px solid transparent;
+}
+
+.btns button:last-child {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0px 8px 10px 5px hsl(233, 64%, 81%);
+    border-bottom: 3px solid hsl(233, 63%, 58%);
+    transition: .3s;
+}
+
+.btns button:last-child:hover {
+    border-bottom: 3px solid transparent;
+}
+
+.sec .contain {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.sec:last-of-type .contain {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.sec .contain h2 {
+    font-weight: 800;
+    font-size: 22px;
+}
+
+section.img {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+}
+
+section>.boxes {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+section>.boxes .box {
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+section>.boxes .box p {
+    left: 0;
+    width: 65%;
+    text-align: left;
+    transform: none;
+}
+
+section>.boxes .box h4 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+section .contain>.boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+section .contain>.boxes .box {
+    display: gri;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+section .contain>.boxes .box .icon {
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+section .contain>.boxes .box h4 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+section .contain>.boxes .box p {
+    width: 100%;
+}
+
+section.logo .contain {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+section.logo .contain .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+section.only .contain .pic {
+    width: 100%;
+    height: 100%;
+}
+
+section.only .contain .pic img {
+    width: 100%;
+    height: 100%;
+}
+
+footer .contain {
+    background-color: hsl(204, 8%, 88%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 50px;
+}
+
+footer .contain .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+}
+
+footer .contain .left .icon {
+    width: 50px;
+    height: 50px;
+}
+
+footer .contain .left .icon img {
+    width: 100%;
+    height: 100%;
+}
+
+footer .contain .left ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+    width: 400px;
+}
+
+footer .contain .left ul li {
+    padding: 0 0 0 40px;
+}
+
+footer .contain .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .contain .right .icon {
+    cursor: pointer;
+}
+
+.contain {
+    text-align: center;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+    font-size: 15px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    position: relative;
+    line-height: 1.7;
+}
+
+@media (max-width:992px) {
+    header .contain {
+        background-image: url('./images/bg-header-desktop.png');
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .btns {
+        display: flex;
+        gap: 20px;
+    }
+    .btns button {
+        padding: 12px 25px;
+        border-radius: 25px;
+        font-size: 15px;
+    }
+    .sec .contain {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .sec:last-of-type .contain {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .sec .contain h2 {
+        font-size: 22px;
+    }
+    section.img {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 100px;
+        justify-content: center;
+    }
+    section.img .pic {
+        width: 80%;
+        height: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+    section.img .pic img {
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+    section>.boxes {
+        display: grid;
+        justify-content: center;
+        gap: 50px;
+    }
+    section>.boxes .box {
+        display: grid;
+        justify-content: center;
+    }
+    section>.boxes .box p {
+        width: 65%;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    section>.boxes .box h4 {
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+    }
+    section .contain>.boxes {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    section .contain>.boxes .box {
+        display: grid;
+        gap: 20px;
+    }
+    section .contain>.boxes .box .icon {
+        width: 50px;
+        height: 50px;
+    }
+    section .contain>.boxes .box h4 {
+        font-weight: 700;
+        font-size: 18px;
+    }
+    section .contain>.boxes .box p {
+        width: 100%;
+    }
+    section.logo .contain {
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+    section.logo .contain .logo {
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+    footer .contain {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        gap: 50px;
+    }
+    footer .contain .left {
+        display: flex;
+        justify-content: flex-start;
+        gap: 100px;
+    }
+    footer .contain .left .icon {
+        width: 50px;
+        height: 50px;
+    }
+    footer .contain .left .icon img {
+        width: 100%;
+        height: 100%;
+    }
+    footer .contain .left ul {
+        gap: 20px;
+        width: 350px;
+    }
+    footer .contain .left ul li {
+        padding: 0 0 0 30px;
+    }
+    footer .contain .right {
+        gap: 20px;
+    }
+    .contain {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    p {
+        font-size: 15px;
+        width: 75%;
+    }
+}
+
+@media (max-width:768px) {
+    header .contain {
+        background-image: url('./images/bg-header-mobile.png');
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .btns {
+        display: grid;
+        gap: 20px;
+    }
+    .btns button {
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+    .sec .contain {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .sec:last-of-type .contain {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .sec .contain h2 {
+        font-size: 20px;
+    }
+    section.img {
+        gap: 80px;
+    }
+    section>.boxes {
+        gap: 40px;
+    }
+    section>.boxes .box p {
+        width: 70%;
+    }
+    section>.boxes .box h4 {
+        font-size: 15px;
+    }
+    section .contain>.boxes {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    section .contain>.boxes .box h4 {
+        font-size: 15px;
+    }
+    section.logo .contain {
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+    section.logo .contain .logo {
+        justify-content: center;
+        gap: 40px;
+    }
+    footer .contain {
+        display: grid;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        gap: 50px;
+    }
+    footer .contain .left {
+        display: grid;
+        justify-content: center;
+        gap: 30px;
+    }
+    footer .contain .left .icon {
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+    footer .contain .left ul {
+        width: fit-content;
+        justify-content: center;
+    }
+    footer .contain .left ul li {
+        padding: 0 0 0 20px;
+    }
+    footer .contain .right {
+        justify-content: center;
+    }
+    .contain {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    p {
+        font-size: 12px;
+        width: 85%;
+    }
+}
